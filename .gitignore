@@ -46,6 +46,6 @@ rescue-backup/
 bom/
 
 # Gerber export output
-out/
+dap-link-gerbers/
 
 # End of https://www.toptal.com/developers/gitignore/api/freecad,kicad
