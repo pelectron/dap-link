@@ -1,5 +1,8 @@
-cd DapLink
+cd DAPLink
 virtualenv venv
-venv/Scripts/activate
+source venv/bin/activate
 pip install -r requirements.txt
-progen generate -t make_gcc_arm --clean -v --parallel --release -p stm32f103xb_bl stm32f103xb_if -b
+progen generate -t make_gcc_arm -p stm32f103xb_bl stm32f103xb_if -b
+cp projectfiles/make_gcc_arm/stm32f103xb_bl/build/stm32f103xb_bl.bin ../bin/
+cp projectfiles/make_gcc_arm/stm32f103xb_if/build/stm32f103xb_if.bin ../bin/
+
